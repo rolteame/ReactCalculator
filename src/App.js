@@ -19,6 +19,7 @@ function App() {
 
   const submit = () => {
     try {
+      // eslint-disable-next-line no-eval
       setResult(eval(result).toString());
     }catch(error) {
       setResult("Err");
